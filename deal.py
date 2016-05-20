@@ -88,8 +88,10 @@ def start():
 	for i in range(1,int(players)+1):
 		player[i] = {"Spades" : [],"Hearts" : [],"Clubs" : [],"Diamonds" : []}
 		#empty dictionary of lists that will act as the players hand.
+		
 	print "Dealing cards now!\n"
 	deal(split, player)
+	
 	print "Cards have been dealt.\n"
 	return player
 	
@@ -127,4 +129,3 @@ def show_hand():
 				print "%r of %r" % (c, k)
 		print
 		
-show_hand()	
